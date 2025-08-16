@@ -1,0 +1,70 @@
+/* assets/style.css */
+
+:root {
+  --bg-light: #f4f4f9;
+  --bg-dark: #1e1e1e;
+  --text-light: #000;
+  --text-dark: #fff;
+  --bubble-bot-light: #e0e0e0;
+  --bubble-bot-dark: #2c2c2c;
+  --bubble-user-light: #add8e6;
+  --bubble-user-dark: #3a7bd5;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+}
+
+.chatbox {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.chat-bubble {
+  padding: 12px 20px;
+  border-radius: 18px;
+  margin: 10px 0;
+  font-size: 1rem;
+  max-width: 80%;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+.bot {
+  background-color: var(--bubble-bot-light);
+  color: var(--text-light);
+}
+
+.user {
+  background-color: var(--bubble-user-light);
+  color: var(--text-light);
+  float: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bot {
+    background-color: var(--bubble-bot-dark);
+    color: var(--text-dark);
+  }
+  .user {
+    background-color: var(--bubble-user-dark);
+    color: var(--text-dark);
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

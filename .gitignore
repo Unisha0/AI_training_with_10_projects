@@ -1,0 +1,41 @@
+myenv/
+**__pycache__/
+**/*__pycache__/
+6.Explore varoious text_embedding techniques/myenv310/
+**/*.csv
+**/*.jpg
+**/*.pt
+**/data/
+**/raw/
+**/*.png
+**/*.pdf
+**/*.pkl
+**/*.faiss
+**/.env
+**/*.db
+# Added exclusions for generated outputs, assets, models, notebooks, IDE files
+**/generated/
+**/assets/
+**/models/
+**/vectorstore/
+.ipynb_checkpoints/
+**/*.ipynb
+*.log
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+*.bak
+*.tmp
+node_modules/
+# Explicitly allow code files
+!**/*.py
+!**/*.js
+!**/*.ts
+!**/*.html
+!**/*.css
+!**/*.md
+
+
+
