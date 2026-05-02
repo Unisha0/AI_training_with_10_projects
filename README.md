@@ -1,145 +1,224 @@
 # 🤖 AI Training — 10 Hands-On Projects
 
-> A curated collection of **10 end-to-end AI and Data Science projects** by **Unisha Chaulagain**, covering Machine Learning, Deep Learning, Generative Models, NLP, and Database Interaction.
+> Built by **Unisha Chaulagain** during an intensive AI & Data Science training program.  
+> A complete learning journey from classical ML to Generative AI, LLMs, and RAG systems.
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
-![Projects](https://img.shields.io/badge/Projects-10-brightgreen)
-![Status](https://img.shields.io/badge/Status-Active-success)
-![Author](https://img.shields.io/badge/Author-Unisha%20Chaulagain-blueviolet)
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Projects-10-brightgreen" />
+  <img src="https://img.shields.io/badge/Topics-ML%20%7C%20DL%20%7C%20NLP%20%7C%20GenAI%20%7C%20LLMs-orange" />
+  <img src="https://img.shields.io/badge/Status-Active-success" />
+  <img src="https://img.shields.io/badge/Author-Unisha%20Chaulagain-blueviolet" />
+</p>
 
 ---
 
-## 👩‍💻 About
+## 👩‍💻 About This Repository
 
-This repository is a portfolio of hands-on AI projects built during an intensive AI training program. Each project is self-contained with its own source code, dependencies, and documentation — ideal for **learning, experimentation, and portfolio building**.
+This repo documents my hands-on learning journey through **10 real-world AI and Data Science projects**. Each project was built from scratch during training sessions, covering a wide range of topics — from building a simple inventory dashboard, training neural networks, working with Generative AI models, all the way to building a full RAG-based PDF chatbot and a natural language database query system.
+
+Every project is self-contained with its own:
+- 📁 Source code
+- 📦 `requirements.txt`
+- 📖 Detailed `README.md`
 
 ---
 
 ## 📂 Project Index
 
-| # | Project | Domain | Key Tech | Folder |
-|---|---------|--------|----------|--------|
-| 1 | 🗂️ [Inventory Management System](#1-️-inventory-management-system) | Data App | Python, Streamlit | [`1.INVENTORY_SYSTEM`](./1.INVENTORY_SYSTEM/) |
-| 2 | 💬 [Sentiment Analysis](#2--sentiment-analysis) | NLP / ML | NLTK, scikit-learn | [`2.SENTIMENT_ANALYSIS`](./2.SENTIMENT_ANALYSIS/) |
-| 3 | 🖼️ [CNN Image Classification (MNIST)](#3-️-cnn-image-classification) | Deep Learning | PyTorch, Streamlit | [`3.CNN_IMAGE`](./3.CNN_IMAGE/) |
-| 4 | 🎨 [GAN & DCGAN — Mini Image AI](#4--gan--dcgan) | Generative AI | PyTorch, GAN | [`4.TRAIN_GAN_AND_DCGAN`](./4.TRAIN_GAN_AND_DCGAN(MINI%20_IMAGE_AI)/) |
-| 5 | 🐾 [CGAN — Pet Image Detector](#5--cgan--pet-image-detector) | Generative AI | PyTorch, CGAN | [`5.TRAIN_CGAN`](./5.TRAIN_CGAN(Pet_image_detector)/) |
-| 6 | 📐 [Text Embedding Techniques](#6--text-embedding-techniques) | NLP | HuggingFace, Gensim | [`6.Explore_text_embeddings`](./6.Explore_varoious_text_embedding%20techniques/) |
-| 7 | 🔧 [Fine-Tune GPT-2](#7--fine-tune-gpt-2) | LLMs | GPT-2, HuggingFace | *(coming soon)* |
-| 8 | 🦙 [Local LLMs with Ollama](#8--local-llms-with-ollama) | LLMs | Ollama, Jupyter | [`8.OLLAMA_PROJECTS`](./8.SIZE%28%3C%3D5GB%29MODELS_WITH_OLLAMA_PROJECTS/) |
-| 9 | 🔍 [RAG System — PDF Chatbot](#9--rag-system) | LLMs / RAG | LangChain, FAISS | [`9.Implement_RAG_SYSTEM`](./9.Implement_RAG_SYSTEM/) |
-| 10 | 🗣️ [Talk to Database (NL2SQL)](#10-️-talk-to-database) | LLMs / DB | LangChain, SQLite | [`10.TALK_TO_DATABASE`](./10.TALK_TO_DATABASE/) |
+| # | Project | Domain | Key Tech |
+|---|---------|--------|----------|
+| 1 | 🗂️ [Inventory Management System](./1.INVENTORY_SYSTEM/) | Data App | Python, Streamlit, Pandas |
+| 2 | 💬 [Sentiment Analysis](./2.SENTIMENT_ANALYSIS/) | NLP / ML | NLTK, scikit-learn, Jupyter |
+| 3 | 🖼️ [CNN Image Classification — MNIST](./3.CNN_IMAGE/) | Deep Learning | PyTorch, CNN, Streamlit |
+| 4 | 🎨 [GAN & DCGAN — Mini Image Generator](./4.TRAIN_GAN_AND_DCGAN(MINI%20_IMAGE_AI)/) | Generative AI | PyTorch, GAN, DCGAN |
+| 5 | 🐾 [CGAN — Pet Image Detector](./5.TRAIN_CGAN(Pet_image_detector)/) | Generative AI | PyTorch, Conditional GAN |
+| 6 | 📐 [Text Embedding Techniques](./6.Explore_varoious_text_embedding%20techniques/) | NLP | Word2Vec, GloVe, BERT, HuggingFace |
+| 7 | 🔧 Fine-Tune GPT-2 | LLMs | GPT-2, HuggingFace Transformers |
+| 8 | 🦙 [Local LLMs with Ollama](./8.SIZE%28%3C%3D5GB%29MODELS_WITH_OLLAMA_PROJECTS/) | LLMs | Ollama, Mistral, Llama3, Jupyter |
+| 9 | 🔍 [RAG System — PDF Chatbot](./9.Implement_RAG_SYSTEM/) | LLMs / RAG | LangChain, FAISS, Streamlit |
+| 10 | 🗣️ [Talk to Database — NL2SQL](./10.TALK_TO_DATABASE/) | LLMs / DB | LangChain, SQLite, Streamlit |
 
 ---
 
-## 🚀 Projects
+## 🗂️ Project 1 — Inventory Management System
 
-### 1. 🗂️ Inventory Management System
-> A Python + Streamlit dashboard for managing product inventory with real-time stock tracking and visualizations.
+A fully functional inventory dashboard built with **Python and Streamlit**. Supports adding, updating, and deleting products, with real-time stock visualization and low-stock alerts.
 
-📁 [`1.INVENTORY_SYSTEM/`](./1.INVENTORY_SYSTEM/) &nbsp;|&nbsp; 📖 [README](./1.INVENTORY_SYSTEM/README.md)
+- 📊 Interactive charts and KPI metrics
+- 📁 CSV-based data persistence
+- 🔔 Low stock threshold alerts
 
----
-
-### 2. 💬 Sentiment Analysis
-> NLP pipeline to classify text as positive, negative, or neutral using ML models and preprocessing techniques.
-
-📁 [`2.SENTIMENT_ANALYSIS/`](./2.SENTIMENT_ANALYSIS/) &nbsp;|&nbsp; 📖 [README](./2.SENTIMENT_ANALYSIS/README.md)
+📖 [View README](./1.INVENTORY_SYSTEM/README.md)
 
 ---
 
-### 3. 🖼️ CNN Image Classification
-> A Convolutional Neural Network trained on the MNIST dataset to recognize handwritten digits (0–9) with ~99% accuracy.
+## 💬 Project 2 — Sentiment Analysis
 
-📁 [`3.CNN_IMAGE/`](./3.CNN_IMAGE/) &nbsp;|&nbsp; 📖 [README](./3.CNN_IMAGE/README.md)
+An NLP pipeline that processes raw text data and classifies sentiment as **positive, negative, or neutral** using classical machine learning models.
 
----
+- 🧹 Full text preprocessing (tokenization, stopwords, lemmatization)
+- 📈 Model training with accuracy, F1-score evaluation
+- 📓 Jupyter Notebook for exploration
 
-### 4. 🎨 GAN & DCGAN
-> Training Vanilla GAN and Deep Convolutional GAN to generate synthetic images from random noise vectors.
-
-📁 [`4.TRAIN_GAN_AND_DCGAN/`](./4.TRAIN_GAN_AND_DCGAN(MINI%20_IMAGE_AI)/) &nbsp;|&nbsp; 📖 [README](./4.TRAIN_GAN_AND_DCGAN(MINI%20_IMAGE_AI)/README.md)
+📖 [View README](./2.SENTIMENT_ANALYSIS/README.md)
 
 ---
 
-### 5. 🐾 CGAN — Pet Image Detector
-> A Conditional GAN trained on pet images (cats, dogs) enabling class-conditioned image generation and detection.
+## 🖼️ Project 3 — CNN Image Classification (MNIST)
 
-📁 [`5.TRAIN_CGAN/`](./5.TRAIN_CGAN(Pet_image_detector)/) &nbsp;|&nbsp; 📖 [README](./5.TRAIN_CGAN(Pet_image_detector)/README.md)
+A **Convolutional Neural Network** trained from scratch on the MNIST handwritten digits dataset, achieving ~99% test accuracy. Served through a Streamlit web app for live predictions.
 
----
+- 🧠 Custom CNN architecture (conv layers, pooling, dropout, FC)
+- 🌐 Streamlit app for drawing/uploading digits
+- 🗂️ Modular code — model, training, utils separated
 
-### 6. 📐 Text Embedding Techniques
-> Comparing TF-IDF, Word2Vec, GloVe, FastText, and BERT embeddings to understand how text is represented in vector space.
-
-📁 [`6.Explore_text_embeddings/`](./6.Explore_varoious_text_embedding%20techniques/) &nbsp;|&nbsp; 📖 [README](./6.Explore_varoious_text_embedding%20techniques/README.md)
+📖 [View README](./3.CNN_IMAGE/README.md)
 
 ---
 
-### 7. 🔧 Fine-Tune GPT-2
-> Fine-tuning GPT-2 on small custom datasets for personalized text generation tasks.
+## 🎨 Project 4 — GAN & DCGAN (Mini Image AI)
 
-> 📌 *Folder coming soon*
+Implementation of both a **Vanilla GAN** and a **Deep Convolutional GAN (DCGAN)** for generating synthetic images. Demonstrates the full adversarial training loop between Generator and Discriminator networks.
 
----
+- ⚔️ Adversarial training (Generator vs Discriminator)
+- 📉 Loss tracking and convergence visualization
+- 🖼️ Image generation from random latent vectors
 
-### 8. 🦙 Local LLMs with Ollama
-> Running and testing open-source LLMs (Mistral, Llama3, Gemma, Phi-3) locally under 5GB using Ollama — no cloud needed.
-
-📁 [`8.OLLAMA_PROJECTS/`](./8.SIZE%28%3C%3D5GB%29MODELS_WITH_OLLAMA_PROJECTS/) &nbsp;|&nbsp; 📖 [README](./8.SIZE%28%3C%3D5GB%29MODELS_WITH_OLLAMA_PROJECTS/README.md)
+📖 [View README](./4.TRAIN_GAN_AND_DCGAN(MINI%20_IMAGE_AI)/README.md)
 
 ---
 
-### 9. 🔍 RAG System
-> A Retrieval-Augmented Generation system that lets you upload PDFs and ask questions — powered by LangChain, FAISS, and an LLM.
+## 🐾 Project 5 — CGAN Pet Image Detector
 
-📁 [`9.Implement_RAG_SYSTEM/`](./9.Implement_RAG_SYSTEM/) &nbsp;|&nbsp; 📖 [README](./9.Implement_RAG_SYSTEM/README.md)
+A **Conditional GAN (CGAN)** that conditions both the Generator and Discriminator on class labels, enabling controlled generation of specific pet categories (cats, dogs). Includes a full inference pipeline.
 
----
+- 🏷️ Label-conditioned image generation
+- 💾 Model checkpointing and reloading
+- 🔮 Inference script for generating new images
 
-### 10. 🗣️ Talk to Database
-> Ask natural language questions about your database — the LLM converts them to SQL queries and returns live results.
-
-📁 [`10.TALK_TO_DATABASE/`](./10.TALK_TO_DATABASE/) &nbsp;|&nbsp; 📖 [README](./10.TALK_TO_DATABASE/README.md)
+📖 [View README](./5.TRAIN_CGAN(Pet_image_detector)/README.md)
 
 ---
 
-## 🛠️ Tech Stack Overview
+## 📐 Project 6 — Text Embedding Techniques
+
+A comprehensive comparison of **6 text embedding methods** — from classical TF-IDF to transformer-based BERT embeddings. Visualizes how different representations capture semantic meaning.
+
+| Method | Type |
+|--------|------|
+| TF-IDF | Statistical |
+| Word2Vec | Shallow Neural |
+| GloVe | Pre-trained Static |
+| FastText | Subword-based |
+| BERT | Transformer |
+| Sentence Transformers | Semantic Similarity |
+
+📖 [View README](./6.Explore_varoious_text_embedding%20techniques/README.md)
+
+---
+
+## 🔧 Project 7 — Fine-Tune GPT-2
+
+Fine-tuning **GPT-2** on small custom datasets for domain-specific text generation. Explores how a pre-trained language model can be adapted to generate personalized content with minimal data.
+
+> 📌 *Code coming soon*
+
+---
+
+## 🦙 Project 8 — Local LLMs with Ollama (≤5GB Models)
+
+Running and experimenting with **open-source LLMs entirely offline** using Ollama. Tests models like Mistral, Llama3, Gemma, and Phi-3 — all under 5GB — with zero API cost and full privacy.
+
+- 🔌 Zero internet dependency after model download
+- 📓 Jupyter Notebook with prompt experiments
+- ⚡ Fast local inference on consumer hardware
+
+📖 [View README](./8.SIZE%28%3C%3D5GB%29MODELS_WITH_OLLAMA_PROJECTS/README.md)
+
+---
+
+## 🔍 Project 9 — RAG System (PDF Chatbot)
+
+A complete **Retrieval-Augmented Generation (RAG)** pipeline that lets users upload PDF files and ask natural language questions. Combines semantic search over document chunks with LLM-generated answers.
 
 ```
-Languages:     Python 3.8+
-Deep Learning: PyTorch, TensorFlow
-NLP:           NLTK, spaCy, HuggingFace Transformers, Gensim
-LLMs:          LangChain, Ollama, OpenAI API
-Generative:    GANs, DCGANs, CGANs
-Databases:     SQLite, SQLAlchemy
-UI:            Streamlit
-Notebooks:     Jupyter
+PDF → Chunking → Embeddings → Vector Store (FAISS)
+                                      ↓
+              User Query → Semantic Search → Top Chunks → LLM → Answer
+```
+
+📖 [View README](./9.Implement_RAG_SYSTEM/README.md)
+
+---
+
+## 🗣️ Project 10 — Talk to Database (NL2SQL)
+
+An AI-powered interface that translates **plain English questions into SQL queries** and executes them against a live database — no SQL knowledge needed.
+
+- 💬 *"Show me all products with stock below 10"* → generates & runs SQL instantly
+- 🗄️ SQLite database integration
+- 🔒 Schema-aware query generation
+
+📖 [View README](./10.TALK_TO_DATABASE/README.md)
+
+---
+
+## 🛠️ Full Tech Stack
+
+```
+Languages      →  Python 3.8+
+Deep Learning  →  PyTorch, TensorFlow
+NLP            →  NLTK, spaCy, HuggingFace Transformers, Gensim
+LLMs           →  LangChain, Ollama, OpenAI API, GPT-2
+Generative AI  →  GAN, DCGAN, CGAN
+Vector Search  →  FAISS, ChromaDB
+Databases      →  SQLite, SQLAlchemy
+UI / Apps      →  Streamlit
+Notebooks      →  Jupyter
 ```
 
 ---
 
-## ⚙️ General Setup
+## ⚙️ How to Run Any Project
 
 ```bash
-# Clone the full repo
+# 1. Clone the repo
 git clone https://github.com/Unisha0/AI_training_with_10_projects.git
 
-# Navigate to any project
-cd AI_training_with_10_projects/1.INVENTORY_SYSTEM
+# 2. Go into any project folder
+cd AI_training_with_10_projects/9.Implement_RAG_SYSTEM
 
-# Install dependencies (each project has its own requirements.txt)
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# Run the project
+# 4. Run the app
 streamlit run app.py
+```
+
+> 💡 Each project folder has its own `requirements.txt` — install only what you need.
+
+---
+
+## 📈 Learning Path
+
+```
+Week 1  →  Inventory System (Python basics, Streamlit)
+Week 2  →  Sentiment Analysis (NLP, ML)
+Week 3  →  CNN (Deep Learning, image classification)
+Week 4  →  GAN / DCGAN / CGAN (Generative AI)
+Week 5  →  Text Embeddings (NLP representations)
+Week 6  →  GPT-2 Fine-tuning (LLMs)
+Week 7  →  Ollama Local LLMs (offline AI)
+Week 8  →  RAG System (LLM + retrieval)
+Week 9  →  Talk to Database (NL2SQL)
 ```
 
 ---
 
 ## 👩‍💻 Author
 
-**Unisha Chaulagain**
+**Unisha Chaulagain**  
 [![GitHub](https://img.shields.io/badge/GitHub-Unisha0-black?logo=github)](https://github.com/Unisha0)
 
 ---
@@ -150,4 +229,4 @@ This repository is licensed under the [MIT License](./LICENSE).
 
 ---
 
-> ⭐ If you find these projects useful, please consider giving this repo a star!
+> ⭐ If you found this helpful or inspiring, feel free to star the repo!
