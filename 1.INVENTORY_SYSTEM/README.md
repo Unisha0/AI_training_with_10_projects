@@ -1,24 +1,31 @@
-# 🗂️ Inventory Management System
+# 🗂️ Project 1 — Inventory Management System
 
-> A Python-based Inventory Management System with an interactive dashboard for real-time stock tracking, product management, and data visualization.
+> **Training Project** | Python · Streamlit · Pandas  
+> Built during AI & Data Science training to learn Python app development and data visualization.
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python) ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit) ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
-
----
-
-## 📌 Overview
-
-This project implements a fully functional **Inventory Management System** using Python. It features a Streamlit-powered dashboard for visualizing stock levels, managing products, and tracking inventory changes in real time. It is designed to simulate a real-world business inventory application.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?logo=streamlit)
+![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
+![Domain](https://img.shields.io/badge/Domain-Data%20App-lightgrey)
 
 ---
 
-## ✨ Features
+## 📌 About This Project
 
-- 📦 Add, update, and delete inventory items
-- 📊 Interactive dashboard with charts and KPIs
-- 🔍 Search and filter products
-- 📁 CSV-based persistent data storage
-- 📉 Low-stock alerts and quantity tracking
+This was my **first hands-on project** during training — focused on building a real-world application using Python. The goal was to create a fully working inventory management tool with a visual dashboard that any business could actually use.
+
+I built a system that tracks products, manages stock levels, raises low-stock alerts, and presents everything in a clean Streamlit dashboard with charts and KPIs.
+
+---
+
+## ✨ What It Does
+
+- 📦 **Add / Update / Delete** products from the inventory
+- 📊 **Dashboard view** with charts showing stock levels and KPIs
+- 🔍 **Search and filter** products by name or category
+- 🔔 **Low stock alerts** when quantity drops below a threshold
+- 💾 **CSV-based storage** so data persists between sessions
+- 📈 **Real-time metrics** — total products, total stock value, low stock count
 
 ---
 
@@ -26,54 +33,58 @@ This project implements a fully functional **Inventory Management System** using
 
 ```
 1.INVENTORY_SYSTEM/
-├── app.py              # Main application entry point
-├── dashboard.py        # Streamlit dashboard UI
+├── app.py           # Main Streamlit app — handles product CRUD
+├── dashboard.py     # Dashboard UI — charts, KPIs, summaries
 └── README.md
 ```
 
+### What each file does
+
+| File | Purpose |
+|------|---------|
+| `app.py` | Core app logic — add/edit/delete products, form handling |
+| `dashboard.py` | Visual dashboard — bar charts, pie charts, stock metrics |
+
 ---
 
-## 🚀 Getting Started
+## 🚀 How to Run
 
-### Prerequisites
-
-- Python 3.8+
-- pip
-
-### Installation
-
+### 1. Clone the repo
 ```bash
-# Clone the repository
 git clone https://github.com/Unisha0/AI_training_with_10_projects.git
 cd AI_training_with_10_projects/1.INVENTORY_SYSTEM
+```
 
-# Install dependencies
+### 2. Install dependencies
+```bash
 pip install streamlit pandas
 ```
 
-### Run the Application
-
+### 3. Launch the app
 ```bash
 streamlit run app.py
 ```
 
-Open your browser at `http://localhost:8501`
+Open `http://localhost:8501` in your browser — the dashboard loads automatically!
 
 ---
 
-## 📸 Demo
+## 🧠 What I Learned
 
-> Dashboard provides real-time inventory metrics, product listing, and visual stock-level charts.
+- Building multi-page Streamlit apps
+- Working with Pandas DataFrames for CRUD operations
+- Creating data visualizations with Streamlit charts
+- Structuring a Python project cleanly with separate files
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Tool | Purpose |
-|------|---------|
-| Python | Core logic |
-| Streamlit | Web dashboard UI |
-| Pandas | Data manipulation |
+| Tool | Version | Purpose |
+|------|---------|---------|
+| Python | 3.8+ | Core application logic |
+| Streamlit | Latest | Web dashboard and UI |
+| Pandas | Latest | Data storage and manipulation |
 
 ---
 
@@ -82,8 +93,10 @@ Open your browser at `http://localhost:8501`
 **Unisha Chaulagain**  
 [![GitHub](https://img.shields.io/badge/GitHub-Unisha0-black?logo=github)](https://github.com/Unisha0)
 
+> Part of [AI Training — 10 Projects](../README.md)
+
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](../LICENSE).
+[MIT License](../LICENSE)
